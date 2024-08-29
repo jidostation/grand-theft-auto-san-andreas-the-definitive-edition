@@ -1,0 +1,17 @@
+﻿[PMC Globals]|None||
+[PMC Code v5.4.1]|F3||1|Window,2,Fast,0,1,Input,-1,-1,1|1|Macro1
+Context=None|
+Groups=Start:1
+1|If Window Active|Chiaki  Stream|1|0|If_Statement|||dive||1|
+2|[LoopStart]|LoopStart|0|0|Loop|||dive||3|
+3|[CommentBlock]|dive|0|1|CommentBlock|||||5|
+4|9|{9 Down}|1|100|Send|||dive||8|
+5|9|{9 Up}|1|100|Send|||dive||10|
+6|[CommentBlock]|swim for 22 sec|0|1|CommentBlock|||||12|
+7|k|{k Down}|1|22000|Send|||dive||15|
+8|k|{k Up}|1|100|Send|||dive||17|
+9|[CommentBlock]|rest|0|1|CommentBlock|||||19|
+10|[Pause]||1|18000|Sleep|||rest||22|
+11|[LoopEnd]|LoopEnd|1|0|Loop|||dive||23|
+12|[End If]|EndIf|1|0|If_Statement|||dive||24|
+
